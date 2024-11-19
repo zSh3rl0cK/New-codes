@@ -15,8 +15,24 @@ begin
    if(Reset = '1') then 
 	output <= 0;
 
-	
-		
+elsif rising edge (clock) then
+	if output = 0 then
+		output <= 5;
+	elsif output = 5 then
+		output <= 4;
+	elsif output = 4 then
+		output <= 6;
+	elsif output = 6 then
+		output <= 1;
+	elsif output = 1 then
+		output <= 3;
+	elsif output = 3 then
+		output <= 2;
+	elsif output = 2 then
+		output <= 0;
+	elsif output = 7 then
+		output <= 0;
+
 	elsif falling_edge(clock) then
 	    output <= output;
 		
