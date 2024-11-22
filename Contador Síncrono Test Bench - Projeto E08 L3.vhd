@@ -20,6 +20,7 @@ ARCHITECTURE behavior OF nome IS
    --Inputs
    signal clock : std_logic := '0';
    signal reset : std_logic := '0';
+   signal output : buffer integer range 0 to 7
 
  	--Outputs
    signal output : integer range 0 to 7;
