@@ -35,7 +35,7 @@ elsif rising edge (clock) then
 
 	elsif falling_edge(clock) then
 	    output <= output;
-		
 	end if;
+end if;
 end process; 
 end Behavioral;
